@@ -36,7 +36,10 @@ end
 def apply_clearance(cart)
   # code here
   clearance_cart = {}
-  
+  cart.each do |item, info|
+    if cart[item][:clearance] == true
+      cart[item][:price] * (0.80).round(2)
+      
 end
 
 def checkout(cart, coupons)
