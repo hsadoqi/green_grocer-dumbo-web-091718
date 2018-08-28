@@ -28,6 +28,7 @@ def apply_coupons(cart, coupons)
         end 
       end 
     end 
+  end
     coupon_cart[item] = info
 end
 
